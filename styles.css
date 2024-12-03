@@ -1,0 +1,62 @@
+/* Gaya tabel */
+table {
+    width: 80%; /* Tabel mengisi 80% lebar halaman untuk memberikan ruang di kiri dan kanan */
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+    margin: 20px auto; /* Memberikan jarak atas dan bawah, serta posisi tabel di tengah horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan untuk tampilan lebih menarik */
+}
+table, th, td {
+    border: 1px solid #ddd; /* Memberikan border tipis untuk tabel, header, dan sel */
+}
+th {
+    background-color: #007BFF; /* Warna latar biru untuk header tabel */
+    color: white; /* Warna teks putih untuk header tabel */
+    font-weight: bold; /* Teks header dicetak tebal */
+    text-align: center; /* Teks dalam header rata tengah */
+    padding: 12px; /* Memberikan ruang dalam sel header */
+}
+td {
+    padding: 10px; /* Memberikan ruang dalam sel data */
+    text-align: center; /* Teks dalam sel data rata tengah */
+    color: #333; /* Warna teks abu-abu gelap */
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Memberikan warna latar abu-abu muda untuk baris genap */
+}
+tr:hover {
+    background-color: #e9f5ff; /* Warna latar biru muda saat baris di-hover */
+}
+
+/* Gaya judul */
+h1 {
+    text-align: center; /* Teks judul rata tengah */
+    font-family: Arial, sans-serif; /* Jenis font Arial dengan fallback sans-serif */
+    color: #007BFF; /* Warna teks biru */
+    margin-top: 20px; /* Memberikan jarak dari elemen di atas judul */
+}
+
+/* Gaya pagination */
+.pagination {
+    margin-top: 15px; /* Memberikan jarak antara tabel dan navigasi pagination */
+    text-align: center; /* Teks pagination rata tengah */
+    font-family: Arial, sans-serif; /* Jenis font Arial dengan fallback sans-serif */
+}
+.pagination a {
+    margin: 0 5px; /* Jarak horizontal antar tombol pagination */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    padding: 8px 12px; /* Memberikan ruang dalam tombol */
+    border: 1px solid #007BFF; /* Border biru untuk tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    color: #007BFF; /* Warna teks biru */
+    transition: all 0.3s ease; /* Animasi halus pada perubahan hover */
+}
+.pagination a:hover {
+    background-color: #007BFF; /* Latar biru saat tombol di-hover */
+    color: white; /* Warna teks putih saat di-hover */
+}
+.pagination a.active {
+    font-weight: bold; /* Teks tombol aktif dicetak tebal */
+    background-color: #007BFF; /* Latar biru untuk tombol aktif */
+    color: white; /* Warna teks putih untuk tombol aktif */
+    border: none; /* Menghapus border tombol aktif */
+}
